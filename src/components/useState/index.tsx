@@ -8,7 +8,7 @@ export const UseStateComponent = () => {
   return (
     <main>
       <p>
-        Principal e mais básico hook do React.JS. Sua função é a capacidade de
+        Nosso principal e mais básico hook do React.JS. Sua função é a capacidade de
         armazenar um valor, esse valor pode ser de qualquer tipo, uma string, um
         array, um booleano, um array de objetos, enfim, o que você precisar
         armazenar, e, além de armazenar, podemos alterar sempre que necessário
