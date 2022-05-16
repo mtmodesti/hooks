@@ -1,19 +1,27 @@
 import "./styles.css";
 import { useState } from "react";
+import { useContext } from "react";
+import { CounterProvider } from "../../providers/counterProvider/counter";
+import { CounterContext } from "../../providers/counterProvider/counter";
 
 export const UseStateComponent = () => {
   const [count, setCount] = useState(0);
   const teste = "const somar = () => useState(count + 1)";
 
+  const counter = useContext(CounterContext);
+  
+
+  
   return (
     <main>
       <p>
-        Nosso principal e mais básico hook do React.JS. Sua função é a capacidade de
-        armazenar um valor, esse valor pode ser de qualquer tipo, uma string, um
-        array, um booleano, um array de objetos, enfim, o que você precisar
-        armazenar, e, além de armazenar, podemos alterar sempre que necessário
-        esse valor. Vamos entender um pouco melhor. Para declarar uma variável
-        com o useState, usamos a seguinte sintaxe: {<br />} {<br />}
+        Nosso principal e mais básico hook do React.JS. Sua função é a
+        capacidade de armazenar um valor, esse valor pode ser de qualquer tipo,
+        uma string, um array, um booleano, um array de objetos, enfim, o que
+        você precisar armazenar, e, além de armazenar, podemos alterar sempre
+        que necessário esse valor. Vamos entender um pouco melhor. Para declarar
+        uma variável com o useState, usamos a seguinte sintaxe: {<br />}{" "}
+        {<br />}
         const [count, setCount] = useState(0){<br />}
         {<br />}
         Perceba que estamos desestruturando de dentro do useState um array com
