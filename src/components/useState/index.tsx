@@ -7,6 +7,7 @@ export const UseStateComponent = () => {
 
   const counter = useContext(CounterContext);
   const [count, setCount] = useState(counter);
+  let expression = "const plusOne = () => {setCount(count + 1)}";
   
   return (
     <main>
@@ -47,7 +48,7 @@ export const UseStateComponent = () => {
           inicialmente definimos como 0 por padrão. Para a função de somar,
           usamos o seguinte trecho: <br />
           {<br />}
-          `${counter}`<br />
+          `${expression}`<br />
           {<br />}E a mesma coisa para a função de diminuir, só que com count -
           1. Agora basta inserirmos isso na função de onClick de nosso botão e
           inserir tudo isso para renderizar em tela. O resultado vc confere
