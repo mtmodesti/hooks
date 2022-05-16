@@ -11,7 +11,6 @@ export const UseStateComponent = () => {
   return (
     <main>
       <CounterContext.Provider value={{ count, setCount }}>
-        <button onClick={() => {}}></button>
         <p>
           Nosso principal e mais básico hook do React.JS. Sua função é a
           capacidade de armazenar um valor, esse valor pode ser de qualquer
